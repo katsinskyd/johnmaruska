@@ -1,0 +1,131 @@
+{:basics
+ {:name          "John Maruska"
+  :label         "Software Engineer"
+  :email         "jackmaruska@gmail.com"
+  :location      "Saint Louis, MO"
+  :meta-keywords []  ; TODO: populate
+  ;; TODO: get SVGs
+  :contact-links [{:network "jackmaruska@gmail.com"
+                   :url     "mailto:jackmaruska@gmail.com"
+                   :icon    "img/email-icon.svg"}
+                  {:network "LinkedIn"
+                   :url     "https://www.linkedin.com/in/johnwmaruska"
+                   :icon    "img/linkedin-icon.svg"}
+                  {:network "GitHub"
+                   :url     "https://github.com/johnmaruska"
+                   :icon    "img/github-icon.svg"}]
+  :summary       {:title          "Summary"
+                  :bullet-points? false
+                  ;; TODO: summary content
+                  :content        [:p "Full-stack developer with a strength for backend webapp and data pipeline projects."]}}
+
+ :fulltime-experience
+ {:title   "Professional experience"
+  :content [{:company   "Incremental (formerly Tradeswell)"
+             :website   "https://incremental.com/"
+             :industry  "AdTech"
+             :location  "Remote (based in Baltimore, MD)"
+             :position  "Senior Software Engineer"
+             :start     "April 25, 2022" :end "April 20, 2023"
+             :highlight ""  ; TODO: highlights
+             :bullets   ["Iteratively improved legacy data pipeline into new design."
+                         "Implemented ingestion of several third-party data sources into standardized internal format."
+                         "Mentored developers new to Clojure and functional programming."]
+             :keywords  [:aws :redshift :athena :glue :ec2 :s3 :lambda
+                         :step-functions :serverless :terraform :kubernetes
+                         :clojure :python :postgres :bash]}
+
+            {:company   "Washington University School of Medicine"
+             :website   "https://medicine.wustl.edu/"
+             :industry  "BioTech"
+             :location  "St. Louis, MO"
+             :position  "Application Developer"
+             :start     "February 15, 2021" :end "April 15, 2022"
+             :highlight "Worked primarily with the Griffith Lab transitioning bioinformatics workflows to run on GCP" ; TODO: highlights
+             :bullets   ["Designed and implemented cloud solutions for running precision-oncology workflows."
+                         "Integrated cloud solution with local cluster provenance database."
+                         "Wrote technical documentation tailored to specific use cases researchers encounter."]
+             :keywords  [:gcp :python :bash :cromwell :cwl :wdl :terraform :postgres]}
+            {:company   "Guaranteed Rate"
+             :website   "https://www.rate.com/"
+             :industry  "Mortgage"
+             :location  "Remote (based in Chicago, IL)"
+             :position  "Software Engineer"
+             :start     "July 29, 2019"
+             :end       "Jan 29, 2021"
+             :highlight ""  ; TODO: highlight
+             :bullets   ["Created new borrower experience MyAccount, collaborating with designers, front-end engineer, and integrating with dependency teams."  ; TODO: shorten
+                         "Collaborated remotely as the team grew from five partially-remote backend engineers to twelve fully-remote interdisciplinary members."  ; TODO: shorten
+                         "Migrated a dozen services from disparate Serverless deploys to one central Terraform repo."
+                         "Took ownership for completion and operations of legacy projects."]
+             :keywords  [:clojure :clojurescript :react :reframe :aws :s3 :serverless
+                         :terraform :kubernetes :nodejs :javascript :postgres :elisp :bash]}
+
+            {:company   "The Climate Corporation"
+             :website   "https://climate.com/"
+             :industry  "Digital Agriculture"
+             :location  "Creve Coeur, MO"
+             :Position  "Software Engineer"
+             :start     "January, 2018" :end "July 24, 2019"
+             :highlight ""  ; TODO: highlight
+             :bullets   ["Designed and implemented an event-oriented microservice architecture to replace legacy batch-driven microservice system for generating map images."  ; TODO: shorten
+                         "Maintained legacy systems for generating map images from satellite data."
+                         "Designed and implemented a ReactJS front-end to visually troubleshoot ingested geospatial data."]
+             :keywords  [:clojure :react :javascript :ruby :aws :s3 :dynamodb :postgres
+                         :ruby-on-rails :scala :arcgis :jenkins :bash]}]}
+ :additional-experience
+ [{:company   "Trilogy Education (now part of edX)"
+   :website   "https://www.edx.org/boot-camps/about"
+   :industry  "Education"
+   :location  "St. Louis, MO"
+   :position  "Substitute Teacher's Assistant"
+   :start     "June 12, 2019" :end "March, 2020"
+   :highlight ""  ; TODO
+   :bullets   ["Guided students through hurdles with assignments cover Excel, SQL, Python, and JavaScript data visualization."
+               "Rapidly familiarised with lessons and assignments when called in last-minute."]
+   :keywords  [:python :javascript :sql :visual-basic]}
+
+  {:company   "The Climate Corporation"
+   :website   "https://www.climate.com/"
+   :industry  "Digital Agriculture"
+   :location  "Creve Coeur, MO"
+   :position  "Software Engineer Intern"
+   :start     "May 2017" :end "August 2017"
+   :highlight ""  ; TODO
+   :bullets   ["Created a ReactJS front-end to visualize the boundaries of geospatial datasets as a tool for the Support team to troubleshoot common boundary problems before escalating to engineering."  ; TODO: shorten
+               "Assisted other interns in troubleshooting problems with their own projects in Python, bash, and JavaScript."]
+   :keywords  [:reactjs :javascript :bash]}
+
+  {:company    "AirZaar (now Strayos)"
+   :website    "https://www.strayos.com/"
+   :industry   "Mining"
+   :location   "Remote (based in St. Louis, MO)"
+   :position   "Backend Software Consultant"
+   :start      "January, 2017" :end "May, 2017"
+   :highlight  ""  ; TODO
+   :bullets    ["Implemented features within a Ruby on Rails back-end and AngularJS front-end"
+                "Rapidly self-taught Ruby on Rails, bash tools, and JavaScript"]
+   :keywords   [:bash :ruby-on-rails :ruby :javascript :angularjs]}
+
+  {:company    "Missouri S&T Mars Rover Design Team"
+   :website    "https://marsrover.mst.edu/"
+   :industry   "Aerospace"
+   :location   "Rolla, MO"
+   :position   "Science Software Developer"
+   :start      "August 2015" :end "May 2017"
+   :highlight "Handled software for the science team covering the sensor telemetry system. Won 1st place Undergraduate Paper in the International Telemetering Conference for co-authoring a paper on the system."
+   :bullets ["Implemented embedded software sensor readings and communication."
+             "Designed and implemented a PyQt desktop GUI for displaying scientific data."
+             "Co-authored a published white-paper covering the telemetry system."]
+   :keywords   [:python :javascript :c++]}]
+
+ :education
+ {:title   "Education"
+  :content [{:institution "Missouri University of Science and Technology"
+             :website     "https://cs.mst.edu/"
+             :area        "Computer Science"
+             :study-type  "B.S."}
+            {:institution "Missouri University of Science and Technology"
+             :website     "https://ece.mst.edu/"
+             :area        "Computer Engineering"
+             :study-type  "B.S."}]}}
